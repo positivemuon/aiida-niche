@@ -1,0 +1,60 @@
+{
+  "name": "aiida-niche",
+  "version": "0.2.0",
+  "description": "AiiDA Plugin for Niche program",
+  "author": "Pietro Bonfa",
+  "author_email": "nomail@mail.com",
+  "url": "https://github.com/muontools/",
+  "license": "GPL",
+  "classifiers": [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Framework :: AiiDA"
+  ],
+  "keywords": [
+    "interstitial",
+    "aiida",
+    "workflows"
+  ],
+  "include_package_data": true,
+  "python_requires": ">=3.6",
+  "setup_requires": [
+    "reentry"
+  ],
+  "reentry_register": true,
+  "install_requires": [
+    "aiida-core",
+    "aiida-symmetry-representation",
+    "aiida-tools"
+  ],
+  "extras_require": {
+    "testing": [
+      "aiida-pytest>=0.1.0a8",
+      "pytest"
+    ],
+    "dev_precommit": [
+      "yapf==0.28",
+      "pre-commit",
+      "prospector==1.1.7",
+      "pylint==2.3.1",
+      "mypy==0.740"
+    ],
+    "docs": [
+      "sphinx",
+      "sphinx-rtd-theme",
+      "sphinxcontrib-details-directive"
+    ]
+  },
+  "entry_points": {
+    "aiida.workflows": [
+      "niche.generate_structures = aiida_niche:GenerateStructures",
+
+    ]
+  }
+}
