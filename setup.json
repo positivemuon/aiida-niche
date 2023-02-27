@@ -4,7 +4,7 @@
   "description": "AiiDA Plugin for Niche program",
   "author": "Pietro Bonfa",
   "author_email": "nomail@mail.com",
-  "url": "https://github.com/muontools/",
+  "url": "https://github.com/positivemuon/",
   "license": "GPL",
   "classifiers": [
     "Development Status :: 3 - Alpha",
@@ -53,8 +53,7 @@
   },
   "entry_points": {
     "aiida.workflows": [
-      "niche.generate_structures = aiida_niche:GenerateStructures",
-
+      "niche.generate_structures = aiida_niche:GenerateStructures"
     ]
   }
 }
