@@ -107,7 +107,7 @@ jobs:
                 python-version: ${{ matrix.python-version }}
 
         -   name: Install Python dependencies
-            run: pip install -e .
+            run: pip install -e .[testing]
 
         -   name: Create AiiDA profile
             run: verdi setup -n --config .github/config/profile.yaml
