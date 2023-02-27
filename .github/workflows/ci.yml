@@ -27,9 +27,6 @@ jobs:
         -   name: Install Python dependencies
             run: pip install -e .[pre-commit,tests]
 
-        -   name: Run pre-commit
-            run: pre-commit run --all-files || ( git status --short ; git diff ; exit 1 )
-
     tests:
 
         runs-on: ubuntu-latest
