@@ -107,7 +107,7 @@ jobs:
                 python-version: ${{ matrix.python-version }}
 
         -   name: Install Python dependencies
-            run: pip install -e .[testing]
+            run: pip install -e .[tests]
 
         -   name: Scan
             run: reentry scan

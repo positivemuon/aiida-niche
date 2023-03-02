@@ -34,11 +34,11 @@
     "aiida-tools"
   ],
   "extras_require": {
-    "testing": [
+    "tests": [
       "aiida-pytest>=0.1.0a8",
       "pytest"
     ],
-    "dev_precommit": [
+    "pre-commit": [
       "yapf==0.28",
       "pre-commit",
       "prospector==1.1.7",
