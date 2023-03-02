@@ -62,6 +62,9 @@ jobs:
         -   name: Install Python dependencies
             run: pip install -e .[tests]
 
+        -   name: Scan
+            run: reentry scan
+
         -   name: Run pytest
             env:
                 AIIDA_WARN_v3: 1
