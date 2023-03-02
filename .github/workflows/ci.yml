@@ -65,6 +65,9 @@ jobs:
         -   name: Scan
             run: reentry scan
 
+        -   name: Config
+            run: touch config.yml
+
         -   name: Run pytest
             env:
                 AIIDA_WARN_v3: 1
