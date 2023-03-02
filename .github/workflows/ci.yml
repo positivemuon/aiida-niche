@@ -109,6 +109,9 @@ jobs:
         -   name: Install Python dependencies
             run: pip install -e .[testing]
 
+        -   name: Scan
+            run: reentry scan
+
         -   name: Create AiiDA profile
             run: verdi setup -n --config .github/config/profile.yaml
 
